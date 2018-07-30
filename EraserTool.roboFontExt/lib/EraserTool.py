@@ -28,11 +28,11 @@ class EraserTool (EditingTool):
                         s.points[0].smooth = False
                         s.smooth = False
                         c.segments[s_index-1].points[-1].smooth = False
-                        
+
             glyph.deselect()
             UpdateCurrentGlyphView()
             glyph.update()
-    
+
     def getToolbarTip(self):
         return "Eraser Tool"
         
