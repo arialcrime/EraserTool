@@ -1,5 +1,3 @@
-from __future__ import print_function
-
 from AppKit import NSImage
 from mojo.roboFont import CreateCursor
 from mojo.extensions import ExtensionBundle
@@ -31,7 +29,7 @@ class EraserTool (EditingTool):
 
             glyph.deselect()
             UpdateCurrentGlyphView()
-            glyph.update()
+            glyph.changed()
 
     def getToolbarTip(self):
         return "Eraser Tool"
